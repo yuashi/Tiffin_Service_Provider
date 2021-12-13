@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modalheader {
+  background-color: rgb(93, 253, 128) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titlesection {
+  margin-top: 60px;
+  padding-top:10%;
+  padding-bottom: 30px;
+  background-image:url('./background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-size: 40px;
+  font-style: italic;
+  color: white;
+  text-shadow: 4px 4px 8px #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.titleheading {
+  font-size: 100px;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+.displaysection {
+  padding-top: 5%;
+}
+
+.displaytitle {
+  margin-bottom: 5%;
+  font-size: 40px;
+  text-shadow: 1px 1px 4px #424141;
+}
+
+.dimmed.dimmable > .ui.animating.dimmer, .dimmed.dimmable > .ui.visible.dimmer, .ui.active.dimmer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.ui.modal,
+.ui.active.modal {
+  margin: 0 auto!important;
+  top: auto !important;
+  left: auto !important;
+  transform-origin: center !important;
+  transition: all ease .5s;
+}
+
+.footersection {
+  bottom: 0;
+  margin-top: 60px;
+  background-color:rgb(7, 82, 26);
+  padding: 50px 70px 50px 80px;
+}
+
+.left {
+  left:0;
+  bottom:0;
+  float:left;
+  align-items: left;
+  text-align: left;
+}
+
+.right{
+  right:0;
+  bottom:0;
+  float:right;
+  align-items: left;
+  text-align: left;
+}
+
+.center {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  bottom:0;
 }
